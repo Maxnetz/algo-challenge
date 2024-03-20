@@ -14,7 +14,7 @@ func sockMerchant(n int32, ar []int32) int32 {
 	})
 
 	i := 0 // Initialize i to 0
-	for i < len(ar)-1 {
+	for i < int(n)-1 {
 		if ar[i] == ar[i+1] {
 			pairs++
 			i += 2 // Move to the next pair
