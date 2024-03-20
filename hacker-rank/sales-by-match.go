@@ -7,7 +7,7 @@ import (
 	"sort"
 )
 
-func sockMerchant2(n int32, ar []int32) int32 {
+func sockMerchant(n int32, ar []int32) int32 {
 	var pairs int
 	sort.Slice(ar, func(i, j int) bool {
 		return ar[i] < ar[j]
@@ -29,6 +29,6 @@ func sockMerchant2(n int32, ar []int32) int32 {
 func main() {
 	n := int32(7) // Converting to int32
 	ar := []int32{1, 2, 1, 2, 1, 3, 2}
-	result := sockMerchant2(n, ar)
+	result := sockMerchant(n, ar)
 	fmt.Println(result)
 }
