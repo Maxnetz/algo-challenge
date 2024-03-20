@@ -13,7 +13,7 @@ func sockMerchant(n int32, ar []int32) int32 {
 		return ar[i] < ar[j]
 	})
 
-	i := 0 // Initialize i to 0
+	i := 0
 	for i < int(n)-1 {
 		if ar[i] == ar[i+1] {
 			pairs++
@@ -27,7 +27,7 @@ func sockMerchant(n int32, ar []int32) int32 {
 }
 
 func main() {
-	n := int32(7) // Converting to int32
+	n := int32(7)
 	ar := []int32{1, 2, 1, 2, 1, 3, 2}
 	result := sockMerchant(n, ar)
 	fmt.Println(result)
