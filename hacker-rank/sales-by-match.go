@@ -3,7 +3,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -26,9 +25,9 @@ func sockMerchant(n int32, ar []int32) int32 {
 	return int32(pairs)
 }
 
-func main() {
-	n := int32(7)
-	ar := []int32{1, 2, 1, 2, 1, 3, 2}
-	result := sockMerchant(n, ar)
-	fmt.Println(result)
-}
+// func main() {
+// 	n := int32(7)
+// 	ar := []int32{1, 2, 1, 2, 1, 3, 2}
+// 	result := sockMerchant(n, ar)
+// 	fmt.Println(result)
+// }
