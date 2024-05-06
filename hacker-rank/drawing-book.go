@@ -3,17 +3,18 @@ package main
 // https://www.hackerrank.com/challenges/drawing-book/problem?isFullScreen=true
 
 func pageCount(n int32, p int32) int32 {
-	// Write your code here
-	// find front
+	// Calculate Page Turns from the Front:
 	front := p / 2
 
-	// find back
+	// Calculate Page Turns from the Back:
 	back := (n - p) / 2
 
+	// The adjustment if book pages are even
 	if n%2 == 0 {
 		back = (n + 1 - p) / 2
 	}
 
+	// Choosing the Minimum Turns:
 	if front < back {
 		return front
 	} else {
