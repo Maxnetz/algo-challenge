@@ -1,5 +1,8 @@
 package main
 
+// https://leetcode.com/problems/two-sum/
+// easy
+
 func twoSum(nums []int, target int) []int {
 	idxMap := make(map[int]int)
 

@@ -1,5 +1,8 @@
 package main
 
+// https://leetcode.com/problems/palindrome-number/
+// easy
+
 import (
 	"fmt"
 )
