@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /*
  * Complete the 'countingValleys' function below.
  *
@@ -31,10 +29,10 @@ func countingValleys(steps int32, path string) int32 {
 	return valleys
 }
 
-func main() {
-	// Correct path string with 'U' and 'D'
-	result := countingValleys(8, "UDDDUDUU")
-	result2 := countingValleys(12, "DDUUDDUDUUUD")
-	fmt.Println(result)  // Expected output: 1
-	fmt.Println(result2) // Expected output: 1
-}
+// func main() {
+// 	// Correct path string with 'U' and 'D'
+// 	result := countingValleys(8, "UDDDUDUU")
+// 	result2 := countingValleys(12, "DDUUDDUDUUUD")
+// 	fmt.Println(result)  // Expected output: 1
+// 	fmt.Println(result2) // Expected output: 1
+// }
